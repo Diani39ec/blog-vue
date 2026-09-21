@@ -1,60 +1,59 @@
-# BlogVue - Plataforma de Blog con Vue 3
+# BlogVue — Plataforma de Blog con Vue 3
 
-![Desarrollado por Diana Trujillo](https://img.shields.io/badge/Desarrollador-Diana%20Trujillo-6366f1?style=for-the-badge&logo=github)
-![Estado](https://img.shields.io/badge/Estado-Completado%20%2F%20Profesional-10b981?style=for-the-badge)
+![Desarrollado por Diana Trujillo](https://img.shields.io/badge/Autora-Diana%20Trujillo-6366f1?style=for-the-badge&logo=github)
+![Estado](https://img.shields.io/badge/Estado-Profesional-10b981?style=for-the-badge)
 ![Licencia](https://img.shields.io/badge/Licencia-MIT-3b82f6?style=for-the-badge)
 
-## 📌 Descripción
+## Descripción
 
-Aplicación web SPA moderna de blog interactivo construida con Vue 3 y Vite.
+SPA moderna de blog interactivo construida con **Vue 3 + Vite**: listado de artículos, vista de post con Markdown renderizado (`marked` + `DOMPurify`), buscador, categorías, etiquetas y modo lectura. Incluye artículos de ejemplo (entre ellos un tutorial de integración con OpenWeatherMap para Ecuador).
 
-Este proyecto ha sido optimizado y estructurado bajo estándares profesionales de diseño y código por **Diana Trujillo**.
+## Demo
 
----
+- Repositorio: <https://github.com/Diani39ec/blog-vue>
+- Demo local (Laragon): `http://blog-vue.test`
+- Demo dev: `npm run dev` → `http://localhost:5173`
 
-## 🚀 Tecnologías Utilizadas
+## Características
 
-`Vue.js 3` `Vite` `JavaScript` `CSS3` `HTML5`
+- Vista de blog, post individual, categorías y "acerca de" con Vue Router
+- Renderizado seguro de Markdown (sanitizado contra XSS)
+- Buscador y nube de etiquetas
+- Diseño responsivo (móvil y escritorio)
 
----
+## Tecnologías
 
-## ✨ Características Principales
+`Vue 3` `Vite` `Vue Router` `marked` `DOMPurify` `JavaScript` `CSS3`
 
-- 🎨 **Diseño Moderno e Interactivo**: Interfaz responsiva adaptada a dispositivos móviles y de escritorio.
-- ⚡ **Alto Rendimiento**: Estructura optimizada para tiempos de carga veloces.
-- 🔒 **Código Limpio y Mantenible**: Estructura organizada siguiendo buenas prácticas de desarrollo.
-- 🌐 **Listo para Despliegue**: Configuración lista para entornos de producción o hosting en Laragon / Vercel / Netlify.
+## Instalación
 
----
+```bash
+git clone https://github.com/Diani39ec/blog-vue.git
+cd blog-vue
+npm install
+npm run dev      # servidor de desarrollo
+npm run build    # build de producción (genera dist/)
+npm run preview  # previsualizar el build
+```
 
-## 🛠️ Instalación y Uso Local
+## Variables de entorno
 
-1. **Clonar el repositorio**:
-   ```bash
-   git clone https://github.com/Diani39ec/blog-vue.git
-   cd blog-vue
-   ```
+Copia `.env.example` a `.env` y ajusta los valores. Nunca subas `.env` reales al repositorio.
 
-2. **Ver en servidor local (Laragon / Apache)**:
-   - Copia la carpeta del proyecto a tu directorio `www` en Laragon (`C:\laragon\www\blog-vue`).
-   - Abre `http://blog-vue.test` en tu navegador.
+| Variable | Descripción | Ejemplo |
+|---|---|---|
+| `VITE_API_URL` | URL base de API (si se conecta un backend) | `https://api.example.com` |
+| `VITE_SITE_TITLE` | Título del sitio | `Vue Blog` |
+| `VITE_DISQUS_SHORTNAME` | Shortname de Disqus para comentarios | `my-blog` |
+| `VITE_WEATHER_API_KEY` | API key de OpenWeatherMap (solo el tutorial de ejemplo) | `tu_api_key_aquí` |
 
-3. **Para proyectos Node / React / Vue** (si aplica):
-   ```bash
-   npm install
-   npm run dev
-   ```
+> Seguridad: el código no contiene secretos reales; las keys se leen vía `import.meta.env` con plantilla en `.env.example`.
 
----
+## Autora
 
-## 👤 Autora
+**Diana Trujillo © 2026**
+Desarrolladora de Software — GitHub: [Diani39ec](https://github.com/Diani39ec)
 
-**Diana Trujillo**  
-- 💼 Desarrolladora de Software
-- 🌐 GitHub: [Diani39ec](https://github.com/Diani39ec)
+## Licencia
 
----
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+MIT. Consulta el archivo `LICENSE` para más detalles.
