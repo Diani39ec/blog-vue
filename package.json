@@ -19,6 +19,6 @@
     "@vitejs/plugin-vue": "^5.1.2",
     "vite": "^5.4.2"
   },
-  "author": "Diana Trujillo <https://github.com/DianaTrujillo>",
+  "author": "Diana Trujillo <https://github.com/Diani39ec>",
   "description": "Aplicación web SPA moderna de blog interactivo construida con Vue 3 y Vite."
 }
