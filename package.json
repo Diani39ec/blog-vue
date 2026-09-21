@@ -1,0 +1,24 @@
+{
+  "name": "blog-vue",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "echo 'No linter configured'"
+  },
+  "dependencies": {
+    "dompurify": "^3.1.6",
+    "marked": "^12.0.2",
+    "vue": "^3.4.38",
+    "vue-router": "^4.4.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.2",
+    "vite": "^5.4.2"
+  },
+  "author": "Diana Trujillo <https://github.com/DianaTrujillo>",
+  "description": "Aplicación web SPA moderna de blog interactivo construida con Vue 3 y Vite."
+}
