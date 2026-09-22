@@ -57,3 +57,15 @@ Desarrolladora de Software — GitHub: [Diani39ec](https://github.com/Diani39ec)
 ## Licencia
 
 MIT. Consulta el archivo `LICENSE` para más detalles.
+
+## Estructura del proyecto
+```
+blog-vue/
+├── index.html · vite.config.js · netlify.toml · _headers · _redirects (deploy Netlify)
+├── src/main.js · src/App.vue (entrada de la app)
+├── src/router/ (rutas) · src/views/ (Home, Blog, Post, Categories, About)
+├── src/components/ (PostCard, PostList, SearchBar, MarkdownRenderer, Newsletter, …)
+├── src/composables/ (useSearch, usePagination) · src/data/ (posts, categories)
+└── src/utils/ (security, date)
+```
+Stack: Vue 3 + Vite + Vue Router + marked + DOMPurify.
